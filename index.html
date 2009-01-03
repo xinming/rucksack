@@ -1,1 +1,516 @@
-My GitHub Page
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head>
+
+  
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>My Rucksack - Rucksack</title>
+    <link href="index_files/pages.css" media="screen" rel="stylesheet" type="text/css">
+    <style>
+      .totalPageWidth { width: 889px; }
+      #content { width: 689px; }
+    </style>
+</head><body id="body">
+    <div id="wrapper">
+      <div id="header">
+        <div class="inner">
+          <div id="userOptions">
+            <div class="inner">
+              <span class="userName">Stranger</span>
+              |
+              <a class="userInfo" href="#">My Profile</a>
+              |
+              <a class="userLogout" href="h#">Logout</a>
+            </div>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+        <div id="tabsWrapper">
+          <ul id="tabs">
+            <li id="item_overview">
+              <a href="#">Overview</a>
+            </li>
+            <li class="active" id="item_pages">
+              <a href="#">Pages</a>
+            </li>
+            <li id="item_reminders">
+              <a href="#">Reminders</a>
+            </li>
+            <li id="item_journal">
+              <a href="#">Journal</a>
+            </li>
+          </ul>
+          <ul id="userTabs">
+            <li id="item_settings">
+              <a href="#">Settings</a>
+            </li>
+            <li id="item_users">
+              <a href="#">Users</a>
+            </li>
+          </ul>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div id="outerWrapper">
+        <div class="totalPageWidth" id="innerWrapper">
+          <div id="statusBar" class="success" style=""></div>
+          <div id="pageContent">
+            <div id="content">
+              <div id="pageTools">
+                <div id="pageResizeHandle"></div>
+                <div>Add to page <span> <a class="add_List atTop" href="#">List</a>, <a class="add_Note atTop" href="#">Note</a>, <a class="add_Separator atTop" href="#">Separator</a>, <a class="add_UploadedFile atTop" href="#">File</a> or <a class="add_Album atTop" href="#">Album</a></span></div>
+              </div>
+              <div class="pageHeader" url="">
+                <div class="pageSlotHandle" id="page_header_handle" restype=".pageHeader" style="display: none;"><div class="inner innerHandle">
+                <ul class="innerHandle"><li class="slot_edit innerHandle">Edit</li>
+                </ul>
+                </div></div>
+                <div class="inner" id="page_header">
+                  <h1>
+                    <span hover_handle="page_header_handle">Rucksack</span>
+                  </h1>
+                </div>
+                <div class="pageHeaderForm" id="page_header_form" style="display: none;"></div>
+              </div>
+              <div id="pageWidgetForms">
+                <div id="add_NoteForm">
+                  <form action="/pages/226/notes" class="fixedWidgetForm" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                    <h2>Add note</h2>
+                    <div>
+                      <input class="autofocus long" id="noteFormTitle" name="note[title]" type="text">
+                    </div>
+                    <div>
+                      <label for="noteFormTitle"></label>
+                      <textarea class="long" id="noteFormContent" name="note[content]" rows="8"></textarea>
+                    </div>
+                    <div>
+                      <input id="note_show_date" name="note[show_date]" value="1" type="checkbox"><input name="note[show_date]" value="0" type="hidden">
+                      <label class="check" for="noteFormShowDate">Show date in title</label>
+                    </div>
+                    <input id="add_NoteFormBefore" name="position[before]" value="0" type="hidden">
+                    <input id="add_NoteFormSlot" name="position[slot]" value="0" type="hidden">
+                    <button class="submit" type="submit">Add note</button>
+                    <a class="cancel" href="#">Cancel</a>
+                  </form>
+                </div>
+                <div id="add_SeparatorForm">
+                  <form action="/pages/226/separators" class="fixedWidgetForm" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                    <div>
+                      <input class="autofocus moderate" id="separator_title" name="separator[title]" type="text">
+                    </div>
+                    <input id="add_SeparatorFormBefore" name="position[before]" value="0" type="hidden">
+                    <input id="add_SeparatorFormSlot" name="position[slot]" value="0" type="hidden">
+                    <button class="submit" type="submit">Add separator</button>
+                    <a class="cancel" href="#">Cancel</a>
+                  </form>
+                </div>
+                <div id="add_UploadedFileForm">
+                  <form action="/pages/226/uploaded_files" class="fixedWidgetForm upload" enctype="multipart/form-data" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                    <div>
+                      <input class="autofocus long" id="uploaded_file_data" name="uploaded_file[data]" type="file">
+                    </div>
+                    <input name="format" value="js" type="hidden">
+                    <input id="add_UploadedFileFormBefore" name="position[before]" value="0" type="hidden">
+                    <input id="add_UploadedFileFormSlot" name="position[slot]" value="0" type="hidden">
+                    <button class="submit" type="submit">Upload</button>
+                    <a class="cancel" href="#">Cancel</a>
+                  </form>
+                </div>
+                <div id="add_AlbumForm">
+                  <form action="/pages/226/albums" class="fixedWidgetForm" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                    <h2>Add album</h2>
+                    <div>
+                      <label for="noteFormTitle">Name</label>
+                      <input class="autofocus long" id="albumFormTitle" name="album[title]" type="text">
+                    </div>
+                    <input id="add_AlbumFormBefore" name="position[before]" value="0" type="hidden">
+                    <input id="add_AlbumFormSlot" name="position[slot]" value="0" type="hidden">
+                    <button class="submit" type="submit">Create</button>
+                    <a class="cancel" href="#">Cancel</a>
+                  </form>
+                </div>
+              </div>
+              <div id="pageTagsWrapper">
+                <span class="floatleft">Tags</span>
+                <ul id="pageTags">
+                  
+                </ul>
+                <div id="pageTagsForm"></div>
+                <div id="pageEditTags">
+                  <a class="edit" href="#">Edit tags</a>
+                </div>
+              </div>
+              <div class="pageSlots ui-sortable" id="slots">
+                <div id="pageInsert" style="display: none;">
+                  <p id="cpi">Insert Here</p>
+                </div>
+                <div id="pageInsertItems">
+                  <div id="pageInsertItemsBar" style="display: none;">
+                    <div id="pageInsertItemCancel">
+                      <a href="#">Cancel</a>
+                    </div>
+                    <div id="pageInsertItemWidgets">
+                      Add to page:
+                      <span><a class="add_List" href="#">List</a>, <a class="add_Note" href="#">Note</a>, <a class="add_Separator" href="#">Separator</a>, <a class="add_UploadedFile" href="#">File</a> or <a class="add_Album" href="#">Album</a></span>
+                    </div>
+                  </div>
+                  <div id="pageTablet">
+                    <div id="pageTabletContainer"></div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_584" slot="584">
+                  <div class="pageWidget" url="/notes/356">
+                    <div class="pageSlotHandle" id="page_slot_handle_584" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageNote">
+                      <h2 hover_handle="page_slot_handle_584">
+                        What is it?
+                      </h2>
+                      <div class="pageNoteContent">
+                        <p hover_handle="page_slot_handle_584">Rucksack
+is a collaborative organization tool which anyone can run on their own
+server, inspired by a certain other collaborative organization tool.</p>
+                        <p hover_handle="page_slot_handle_584">The
+key feature is that you have “Pages” which contain widgets. Widgets can
+be moved around, edited, and so on. Pages can be shared privately to
+other users for editing, or shared publicly for viewing.</p>
+                        <p hover_handle="page_slot_handle_584">Widgets included as standard are lists, notes, and separators.</p>
+                        <p hover_handle="page_slot_handle_584">Rucksack also implements simple reminders (using chronic), and also a Journal for providing Twitter-like status updates.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_585" slot="585">
+                  <div class="pageWidget" url="/separators/26">
+                    <div class="pageSlotHandle" id="page_slot_handle_585" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageSeparator" hover_handle="page_slot_handle_585">
+                      <h2 hover_handle="page_slot_handle_585">Available Widgets</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_586" slot="586">
+                  <div class="pageWidget" url="/lists/81">
+                    <div class="pageSlotHandle" id="page_slot_handle_586" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageList" id="list_81">
+                      <div class="pageListHeader" id="list_header_81">
+                        <h2 hover_handle="page_slot_handle_586">Lists</h2>
+                      </div>
+                      <div class="pageListForm" id="list_header_81_form" style="display: none;">
+                        <h2>Lists</h2>
+                      </div>
+                      <div class="openItems">
+                        <ul style="position: relative;" class="listItems ui-sortable" id="sortable_list_81">
+                          <li class="listItem" id="list_item_230" item_id="230" url="/lists/81/items/230">
+                            <div class="listItemContent">
+                              <div class="pageSlotHandle" id="page_item_handle_230" restype=".listItem" style="display: none;"><div class="inner innerHandle">
+                              <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                              <li class="slot_edit innerHandle">Edit</li>
+                              <li class="slot_handle innerHandle">+</li>
+                              </ul>
+                              </div></div>
+                              <input class="checkbox" hover_handle="page_item_handle_230" type="checkbox">
+                              <span class="itemText" hover_handle="page_item_handle_230">
+                                
+                                Upload everything to GitHub
+                              </span>
+                            </div>
+                          </li>
+                          <li class="listItem" id="list_item_231" item_id="231" url="/lists/81/items/231">
+                            <div class="listItemContent">
+                              <div class="pageSlotHandle" id="page_item_handle_231" restype=".listItem" style="display: none;"><div class="inner innerHandle">
+                              <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                              <li class="slot_edit innerHandle">Edit</li>
+                              <li class="slot_handle innerHandle">+</li>
+                              </ul>
+                              </div></div>
+                              <input class="checkbox" hover_handle="page_item_handle_231" type="checkbox">
+                              <span class="itemText" hover_handle="page_item_handle_231">
+                                
+                                Profit!!!
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="addItem">
+                        <div class="inner" style="display: none;">
+                    <form action="/pages/226/lists/81/items" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                            <div>
+                              <input class="autofocus moderate" id="list_item_content" name="list_item[content]" type="text">
+                            </div>
+                            <div>
+                              <button class="submit" type="submit">Add item</button>
+                              <a class="cancel" href="#">Cancel</a>
+                            </div>
+                    </form>
+                        </div>
+                        <div class="newItem">
+                          <a hover_handle="page_slot_handle_586" href="#">Add item</a>
+                        </div>
+                      </div>
+                      <div class="completedItems">
+                        <ul class="listItems">
+                          <li class="listItem" id="list_item_229" item_id="229" url="/lists/81/items/229">
+                            <div class="listItemContent">
+                              <input checked="checked" class="checkbox" hover_handle="page_item_handle_229" type="checkbox">
+                              <span class="itemText" hover_handle="page_item_handle_229">
+                                <img src="index_files/del_gen.gif" alt="" class="itemDelete">
+                                Write a lovely example page for Rucksack
+                              </span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_587" slot="587">
+                  <div class="pageWidget" url="/notes/357">
+                    <div class="pageSlotHandle" id="page_slot_handle_587" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageNote">
+                      <h2 hover_handle="page_slot_handle_587">
+                        Notes
+                        <span class="pageNoteDate" hover_handle="page_slot_handle_587"> 3 Jan</span>
+                      </h2>
+                      <div class="pageNoteContent"><p hover_handle="page_slot_handle_587">Need to demonstrate another widget.</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_588" slot="588">
+                  <div class="pageWidget" url="/uploaded_files/90">
+                    <div class="pageSlotHandle" id="page_slot_handle_588" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageUploadedFile" hover_handle="page_slot_handle_588">
+                      <img hover_handle="page_slot_handle_588" src="index_files/txt.png">
+                      <a hover_handle="page_slot_handle_588" href="index_files/Files.txt">Files.txt</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_589" slot="589">
+                  <div class="pageWidget" url="/albums/14">
+                    <div class="pageSlotHandle" id="page_slot_handle_589" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageAlbum" id="album_14">
+                      <div class="pageAlbumHeader" id="album_header_14">
+                        <h2 hover_handle="page_slot_handle_589">Albums</h2>
+                      </div>
+                      <div class="pageAlbumForm" id="album_header_14_form" style="display: none;">
+                        <h2>Albums</h2>
+                      </div>
+                      <ul class="albumPictures" id="sortable_album_14">
+                        <li class="albumPicture" id="album_picture_75" picture_id="75" url="/albums/14/pictures/75">
+                          <div class="albumPictureContent">
+                            <div class="pageSlotHandle" id="page_picture_handle_75" restype=".albumPicture" style="display: none;"><div class="inner innerHandle">
+                            <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                            <li class="slot_edit innerHandle">Edit</li>
+                            <li class="slot_handle innerHandle">+</li>
+                            </ul>
+                            </div></div>
+                            <a href="index_files/Green_Apple.gif">
+                              <img hover_handle="page_picture_handle_75" src="index_files/Green_Apple.gif">
+                            </a>
+                            <div class="albumPictureCaption">Apple</div>
+                          </div>
+                        </li>
+                        <li class="albumPicture" id="album_picture_76" picture_id="76" url="/albums/14/pictures/76">
+                          <div class="albumPictureContent">
+                            <div class="pageSlotHandle" id="page_picture_handle_76" restype=".albumPicture" style="display: none;"><div class="inner innerHandle">
+                            <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                            <li class="slot_edit innerHandle">Edit</li>
+                            <li class="slot_handle innerHandle">+</li>
+                            </ul>
+                            </div></div>
+                            <a href="index_files/Orange.gif">
+                              <img hover_handle="page_picture_handle_76" src="index_files/Orange.gif">
+                            </a>
+                            <div class="albumPictureCaption">Orange</div>
+                          </div>
+                        </li>
+                        <li class="albumPictureForm" id="album_picture_form">
+                          <div class="inner" style="display: none;">
+                            <form action="/pages/226/albums/14/pictures" enctype="multipart/form-data" method="post"><div style="margin: 0pt; padding: 0pt;"></div>
+                              <div>
+                                <input name="format" value="js" type="hidden">
+                                <input class="autofocus long" id="picture_picture" name="picture[picture]" size="8" type="file">
+                                <input class="autofocus long" id="picture_caption" name="picture[caption]" size="18" type="text">
+                              </div>
+                              <div>
+                                <button class="submit" type="submit">Add picture</button>
+                                <a class="cancel" href="#">Cancel</a>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="newPicture">
+                            <a href="#">Add picture</a>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_590" slot="590">
+                  <div class="pageWidget" url="/separators/27">
+                    <div class="pageSlotHandle" id="page_slot_handle_590" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageSeparator" hover_handle="page_slot_handle_590">
+                      <h2 hover_handle="page_slot_handle_590">In conclusion</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_591" slot="591">
+                  <div class="pageWidget" url="/notes/358">
+                    <div class="pageSlotHandle" id="page_slot_handle_591" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageNote">
+                      <h2 hover_handle="page_slot_handle_591">
+                        Great! Where can i download it?
+                      </h2>
+                      <div class="pageNoteContent"><p hover_handle="page_slot_handle_591">RuckSack is available from <a hover_handle="page_slot_handle_591" href="http://http//github.com/jamesu/rucksack/tree/master">GitHub</a>  .</p></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot" id="page_slot_592" slot="592">
+                  <div class="pageWidget" url="/notes/359">
+                    <div class="pageSlotHandle" id="page_slot_handle_592" restype=".pageWidget" style="display: none;"><div class="inner innerHandle">
+                    <ul class="innerHandle"><li class="slot_delete innerHandle">-</li>
+                    <li class="slot_edit innerHandle">Edit</li>
+                    <li class="slot_handle innerHandle">+</li>
+                    </ul>
+                    </div></div>
+                    <div class="pageNote">
+                      <h2 hover_handle="page_slot_handle_592">
+                        Is there a demo?
+                      </h2>
+                      <div class="pageNoteContent">
+                        <p hover_handle="page_slot_handle_592">Sadly,
+no. However you may have noticed that this page was generated by
+Rucksack, and thus is a good approximation of what you can expect to
+see after installing Rucksack.</p>
+                        <p hover_handle="page_slot_handle_592">Apart from that, all i can suggest is to <a hover_handle="page_slot_handle_592" href="http://github.com/jamesu/rucksack/tree/master/README.markdown">try out Rucksack for yourself</a> .</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pageSlot pageFooter" id="page_slot_footer" slot="-1">  </div>
+              </div>
+              <div id="pageOptions">
+                <a href="#" id="pageSetFavourite" style="display: none;">Favourite</a>
+                <a href="#" id="pageSetNotFavourite">Not favourite</a>
+                |
+                Page is not shared (<a href="#">Change</a>)
+                |
+                <a href="#" id="pageDuplicate">Duplicate</a>
+                |
+                <a href="#" id="pageDelete">Delete page</a>
+                <div>
+                  <div id="pageAddress">
+                    Email address: <a href="mailto:1fe41952bda48@localhost">9eb41952bda28@localhost</a>
+                    (<a href="#" id="pageReset">Reset</a>)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="sidebar">
+              <div class="sidebarBlock">
+                <a class="newPage" href="#">New page</a>
+              </div>
+              <div class="sidebarBlock">
+                <ul id="pageListItems">
+                  <li class="ui-droppable" page_id="0">
+                    <a href="#">All pages</a>
+                  </li>
+                  <li class="ui-droppable" page_id="197">
+                    <a href="#">Strangers page</a>
+                  </li>
+                  <li class="ui-droppable" page_id="201">
+                    <a href="#">Action list</a>
+                  </li>
+                  <li class="ui-droppable" page_id="175">
+                    <a href="#">Contacts list</a>
+                  </li>
+                  <li class="ui-droppable" page_id="212">
+                    <a href="#">Holidays</a>
+                  </li>
+                  <li class="ui-droppable" page_id="187">
+                    <a href="#">Mountain climbing</a>
+                  </li>
+                  <li class="ui-droppable" page_id="128">
+                    <a href="h#">Music</a>
+                  </li>
+                  <li class="ui-droppable" page_id="135">
+                    <a href="#">New Years Resolutions</a>
+                  </li>
+                  <li class="ui-droppable" page_id="208">
+                    <a href="#">Opera houses</a>
+                  </li>
+                  <li class="ui-droppable" page_id="191">
+                    <a href="#">Orders</a>
+                  </li>
+                  <li class="ui-droppable" page_id="206">
+                    <a href="#">Parties</a>
+                  </li>
+                  <li class="ui-droppable" page_id="178">
+                    <a href="#">Ruby on Rails</a>
+                  </li>
+                  <li class="current" page_id="226">
+                    <a href="#">Rucksack</a>
+                  </li>
+                  <li class="ui-droppable" page_id="203">
+                    <a href="#">Sandbox</a>
+                  </li>
+                  <li class="ui-droppable" page_id="214">
+                    <a href="#">Travel destinations</a>
+                  </li>
+                  <li class="ui-droppable" page_id="176">
+                    <a href="#">Tools</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <div id="footer">
+          <div id="copy">
+            <a href="#">My Rucksack</a>
+          </div>
+          <div id="productSignature">Powered by Rucksack</div>
+        </div>
+      </div>
+    </div>
+</body></html>
