@@ -4,16 +4,20 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
-h1 { font-size: 24px; font-weight: bold; padding-bottom: 6px; }
-
+h1 { font-size: 22px; font-weight: bold }
 h2 { font-size: 16px; font-weight: bold; padding-bottom: 0px; }
-
 h3 { font-size: 16px; font-weight: bold; padding-bottom: 6px; }
 
 body { margin: 0px; padding: 0px; background-color: #E5E5E5; color: #000; }
 
 label { display: block; }
-
+.clear{
+  clear: both;
+  height:0px;
+  line-height: 0px;
+  width: 0px;
+  font-size: 0px;
+} 
 input.checkbox {
   padding: 0px;
   margin: 2px;
@@ -34,8 +38,6 @@ pre { overflow: auto; }
 
 body, p, ol, ul, td {
   font-family: lucida grande, verdana, arial, helvetica, sans-serif;
-/*  font-family: lucida grande,verdana,sans-serif;*/
-/*  font-family: helvetica, arial, sans-serif;*/
   font-size:   13px;
   line-height: 18px;
 }
@@ -47,33 +49,31 @@ pre {
 }
 
 form div {
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 .totalPageWidth { width: 600px; }
 
 #header {
-  margin: 0pt auto;
-  /* width: 600px; */
-  padding: 0px 6px 0px 6px; 
+  margin: 0px auto;
   text-align: left;
+  background: #555;
   
-  background: #007700;
 }
 
 /* outer wrapper for content. contains side background */
 #outerWrapper {
+  padding-top: 14px;
 }
 
 #innerWrapper {
-  /*margin: 0pt 0pt 0pt 48px;*/
   margin: 0pt auto;
   text-align: left;
   padding: 0px 16px 18px 16px;
 }
 
 #pageContent {
-margin-top: 12px;
+/*  margin-top: 12px;*/
 }
 
 #innerContent {
@@ -85,7 +85,7 @@ margin-top: 12px;
   width: 925px;
   margin: 0pt auto;
   text-align: left;
-  padding: 12px 6px 0px 6px;
+/*  padding: 12px 6px 0px 6px;*/
 }
 
 #tabsWrapper ul {
@@ -94,7 +94,7 @@ margin-top: 12px;
   list-style-type: none;
   
   margin: 0pt;
-  padding: 0 12px;
+  padding: 0 20px;
 }
 
 #tabsWrapper ul li {
@@ -104,17 +104,13 @@ margin-top: 12px;
 
 #tabsWrapper ul li a {
   display: block;
-  
   font-size: 13px;
-/*  font-weight: bold;*/
   text-align: center;
-  
-  padding: 2px 12px;
   color: #fff;
 }
 
 #tabsWrapper ul li.active a {
-  background: #eee;
+  background: #fff;
   text-decoration: none;
   
   color: #000;
@@ -130,8 +126,18 @@ margin-top: 12px;
 }
 
 #userTabs  a{
-  padding: 2px 5 2px 5px !important;
   font-size: 10px !important;
+  padding: 8px;
+}
+
+
+/*DGM*/
+
+
+
+ul#tabs li a{
+  display: block;
+  padding: 8px 16px;
 }
 
 
@@ -153,6 +159,7 @@ margin-top: 12px;
   float: right;
   
   margin: 0px;
+  margin-top: 0px;
 }
 
 .sidebarBlock {
@@ -162,8 +169,8 @@ margin-top: 12px;
 
 .newPage {
   font-weight: bold;
-  font-size: 16px;
-  text-decoration: none;
+  font-size: 14px;
+/*  text-decoration: none;*/
 }
 
 #wrapper {
@@ -172,8 +179,8 @@ margin-top: 12px;
 
 .pageHeader {
   padding: 10px 0 10px 18px;
+/*  border-bottom: 1px solid #eee;*/
 }
-
 .pageHeader h1 {
   margin: 0px;
   margin-bottom: 8px;
@@ -237,7 +244,7 @@ margin-top: 12px;
 
 #pageListItems li a {
 	display: block;
-	padding: 4px 4px 4px 12px;
+	padding: 6px 4px 6px 12px;
 }
 
 #pageListItems li:hover { background: gray; }
@@ -403,9 +410,17 @@ li.albumPicture img {
 
 /* Page insert items bar. Also contains forms for certain items */
 #pageInsertItems {
-    position: relative;
+/*  margin-top: 20px;*/
+  position: relative;
 }
 
+
+#pageInsertItems h2{
+  padding: 4px 0px;
+  font-size: 14px;
+
+
+}
 #pageInsertItemsBar {
     left: -70px;
     padding-left: 70px;
@@ -416,6 +431,7 @@ li.albumPicture img {
     z-index: 100;
     width: 100%; /* width */ 
     background:#DDD;
+    margin-top: 20px;
 }
 
 #pageInsertItemsBar a:hover {
@@ -449,13 +465,29 @@ li.albumPicture img {
 /* Generic forms */
 
 .widgetForm, .fixedWidgetForm {
-  padding: 6px;
+  padding: 10px;
   border: 1px solid #DDDDDD;
   background-color: #F2F2F2;
 }
 
+input{
+  font-size: 13px;
+  padding: 3px;
+}
+
+textarea{
+  font-size: 13px;
+  padding: 3px;
+
+}
+
+button.submit{
+  padding: 4px;
+
+}
+
 input.long, textarea.long {
-  width: 99%;
+  width: 98%;
 }
 
 input.moderate, textarea.moderate {
@@ -911,7 +943,8 @@ label.check {
 -----------*/
 .addPageLink {
 	display: block;
-	padding: 5px 5px 5px 14px;
+	padding: 6px 5px 6px 14px;
+	margin-bottom: 4px;
 }
 .addPageLink .newPage { display: block; }
 .addPageLink .newPage:hover { background-color: gray; }
@@ -925,3 +958,4 @@ label.check {
 
 
 .addItem .newItem a {font-size: 10px;}
+a.cancel{font-size: 10px;}
