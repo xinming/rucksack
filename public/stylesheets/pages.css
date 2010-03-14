@@ -57,8 +57,10 @@ form div {
 #header {
   margin: 0px auto;
   text-align: left;
-  background: #555;
-  background: #3185C5;
+  background: #666;
+/*  background: #3185C5;*/
+  -moz-box-shadow: 3px 3px 4px #aaa;
+  -webkit-box-shadow: 4px 4px 3px #bbb;
 /*  padding-top: 10px;*/
   
 }
@@ -225,7 +227,8 @@ ul#tabs li a{
   padding: 12px 12px 8px 12px;
   border-top: 1px solid #eee;
 /*  background-color: #fbfbfb;*/
-  background: #f5f5f5;
+  background: url('/images/gradient.gif') repeat-x;
+/*  background: #f5f5f5;*/
   text-align: left;
 	font-size: 85%;
 	color: #555555;
