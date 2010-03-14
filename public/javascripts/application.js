@@ -187,7 +187,7 @@ $(document).ready(function(){
     Page.bindStatic();
     Page.bind();
     
-    $('#pageResizeHandle').mousedown(Page.startResize);
+//    $('#pageResizeHandle').mousedown(Page.startResize);
 });
 
 // Handles the hover bar for modifying widgets 
@@ -242,7 +242,7 @@ var HoverHandle = {
         
         // Make sure the old one vanishes
         if (!this.current_handle.is(':animated'))
-           this.current_handle.fadeOut(800, function() { this.current_handle = null; });
+           this.current_handle.hide(0, function() { this.current_handle = null; });
         if (!InsertionMarker.enabled)
             InsertionMarker.setEnabled(true);
     }
@@ -388,54 +388,54 @@ var Page = {
       Page.isSortingWrappedElements = false;
     },
     
-    startResize: function(e) {
-      var evt = e.originalEvent;
-      Page.lastResizePosition = evt.clientX;
-      Page.isResizing = true;
-      
-      InsertionMarker.setEnabled(false);
-      HoverHandle.setEnabled(false);
-      
-      var content = $('#innerWrapper');
-      content.css('margin', '0px 0px 0px ' + content.offset().left + 'px');
-      
-      $('#body').css('cursor', 'move').disableTextSelect();
-      $(document).mousemove(Page.doResize).mouseup(Page.endResize);
-    },
+//    startResize: function(e) {
+//      var evt = e.originalEvent;
+//      Page.lastResizePosition = evt.clientX;
+//      Page.isResizing = true;
+//      
+//      InsertionMarker.setEnabled(false);
+//      HoverHandle.setEnabled(false);
+//      
+//      var content = $('#innerWrapper');
+//      content.css('margin', '0px 0px 0px ' + content.offset().left + 'px');
+//      
+//      $('#body').css('cursor', 'move').disableTextSelect();
+//      $(document).mousemove(Page.doResize).mouseup(Page.endResize);
+//    },
     
-    endResize: function(e) {
-      Page.isResizing = false;
-      
-      InsertionMarker.setEnabled(true);
-      HoverHandle.setEnabled(true);
-      
-      $('#body').css('cursor', 'default').enableTextSelect();
-      
-      var content = $('#innerWrapper');
-      content.css('margin', '0px auto');
-      
-      $(document).unbind('mouseup', Page.endResize);
-      $(document).unbind('mousemove', Page.doResize);
-      
-      $.put(Page.buildUrl('/resize'), {'page[width]': PAGE_WIDTH}, null, 'script');
-    },
+//    endResize: function(e) {
+//      Page.isResizing = false;
+//      
+//      InsertionMarker.setEnabled(true);
+//      HoverHandle.setEnabled(true);
+//      
+//      $('#body').css('cursor', 'default').enableTextSelect();
+//      
+//      var content = $('#innerWrapper');
+//      content.css('margin', '0px auto');
+//      
+//      $(document).unbind('mouseup', Page.endResize);
+//      $(document).unbind('mousemove', Page.doResize);
+//      
+//      $.put(Page.buildUrl('/resize'), {'page[width]': PAGE_WIDTH}, null, 'script');
+//    },
     
-    doResize: function(e) {
-      if (!Page.isResizing)
-        return false;
-      
-      var evt = e.originalEvent;
-      var delta = evt.clientX - Page.lastResizePosition;
-      Page.setWidth(PAGE_WIDTH + delta);
-      
-      Page.lastResizePosition = evt.clientX;
-    },
+//    doResize: function(e) {
+//      if (!Page.isResizing)
+//        return false;
+//      
+//      var evt = e.originalEvent;
+//      var delta = evt.clientX - Page.lastResizePosition;
+//      Page.setWidth(PAGE_WIDTH + delta);
+//      
+//      Page.lastResizePosition = evt.clientX;
+//    },
     
-    setWidth: function(width) {
-      PAGE_WIDTH = width;
-      $('#content').css('width', PAGE_WIDTH + 'px');
-      $('#innerWrapper').css('width', (PAGE_WIDTH + 200) + 'px');
-    },
+//    setWidth: function(width) {
+//      PAGE_WIDTH = width;
+//      $('#content').css('width', PAGE_WIDTH + 'px');
+//      $('#innerWrapper').css('width', (PAGE_WIDTH + 200) + 'px');
+//    },
     
     buildUrl: function(resource_url) {
       if (PAGE_ID != null)

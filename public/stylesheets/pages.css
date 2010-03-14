@@ -4,13 +4,13 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
-h1 { font-size: 28px; font-weight: bolder; padding-bottom: 6px; }
+h1 { font-size: 24px; font-weight: bold; padding-bottom: 6px; }
 
-h2 { font-size: 18px; font-weight: bolder; padding-bottom: 6px; }
+h2 { font-size: 16px; font-weight: bold; padding-bottom: 0px; }
 
-h3 { font-size: 16px; font-weight: bolder; padding-bottom: 6px; }
+h3 { font-size: 16px; font-weight: bold; padding-bottom: 6px; }
 
-body { margin: 0px; padding: 0px; background-color: #eee; color: #000; }
+body { margin: 0px; padding: 0px; background-color: #E5E5E5; color: #000; }
 
 label { display: block; }
 
@@ -34,6 +34,8 @@ pre { overflow: auto; }
 
 body, p, ol, ul, td {
   font-family: lucida grande, verdana, arial, helvetica, sans-serif;
+/*  font-family: lucida grande,verdana,sans-serif;*/
+/*  font-family: helvetica, arial, sans-serif;*/
   font-size:   13px;
   line-height: 18px;
 }
@@ -51,12 +53,12 @@ form div {
 .totalPageWidth { width: 600px; }
 
 #header {
-    margin: 0pt auto;
-    /* width: 600px; */
-    padding: 8px 6px 0px 6px; 
-    text-align: left;
-    
-    background: #007700;
+  margin: 0pt auto;
+  /* width: 600px; */
+  padding: 0px 6px 0px 6px; 
+  text-align: left;
+  
+  background: #007700;
 }
 
 /* outer wrapper for content. contains side background */
@@ -64,85 +66,93 @@ form div {
 }
 
 #innerWrapper {
-    /*margin: 0pt 0pt 0pt 48px;*/
-    margin: 0pt auto;
-    text-align: left;
-    padding: 0px 16px 18px 16px;
+  /*margin: 0pt 0pt 0pt 48px;*/
+  margin: 0pt auto;
+  text-align: left;
+  padding: 0px 16px 18px 16px;
 }
 
 #pageContent {
-  margin-top: 12px;
+margin-top: 12px;
 }
 
 #innerContent {
-    padding: 18px 16px 18px 16px;
+  padding: 18px 16px 18px 16px;
 }
 
 /* tabs */
 #tabsWrapper {
-    margin: 0pt auto;
-    text-align: left;
-    
-    padding: 12px 6px 0px 6px;
+  width: 925px;
+  margin: 0pt auto;
+  text-align: left;
+  padding: 12px 6px 0px 6px;
 }
 
 #tabsWrapper ul {
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    
-    margin: 0pt;
-    padding: 0 12px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  
+  margin: 0pt;
+  padding: 0 12px;
 }
 
 #tabsWrapper ul li {
-    float: left;
-    margin: 0pt 1px;
+  float: left;
+  margin: 0pt 0px;
 }
 
 #tabsWrapper ul li a {
-    display: block;
-    
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    
-    padding: 2px 12px;
-    color: #fff;
+  display: block;
+  
+  font-size: 13px;
+/*  font-weight: bold;*/
+  text-align: center;
+  
+  padding: 2px 12px;
+  color: #fff;
 }
 
 #tabsWrapper ul li.active a {
-    background: #eee;
-    text-decoration: none;
-    
-    color: #000;
+  background: #eee;
+  text-decoration: none;
+  
+  color: #000;
 }
 
 #tabs {
-    float:left;
+  float:left;
 }
 
 #userTabs {
-    float: right;
+  float: right;
+  margin-right:0px !important;
 }
+
+#userTabs  a{
+  padding: 2px 5 2px 5px !important;
+  font-size: 10px !important;
+}
+
 
 /* content floats left in the main box */
 #content {
-    float: left;
-    width: 400px;
-    background: #fff;
-    border-right: 2px solid #bbb;
-    border-bottom: 2px solid #bbb;
-    
-    margin: 0px;
+  float: left;
+  width: 400px;
+  background: #fff;
+/*    border-right: 1px solid #ccc;*/
+/*    border-bottom: 1px solid #ccc;*/
+  
+  margin: 0px;
 }
 
 /* sidebar floats right in the main box */
 #sidebar {
-    width: 190px;
-    float: right;
-    
-    margin: 0px;
+/*    width: 190px;*/
+  width: 235px;
+  float: right;
+  
+  margin: 0px;
 }
 
 .sidebarBlock {
@@ -161,20 +171,23 @@ form div {
 }
 
 .pageHeader {
-  padding-left: 14px;
+  padding: 10px 0 10px 18px;
 }
 
 .pageHeader h1 {
-    margin: 0px;
-    padding-bottom: 8px;
+  margin: 0px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 #pageTools {
-    margin-bottom: 12px;
+/*  margin-bottom: 12px;*/
+  background: #ddd !important;
 }
 
 #pageTools div {
-    padding: 8px 12px 8px 12px;
+  background: #ccc;
+/*  padding: 8px 12px 8px 12px;*/
 }
 
 #pageTools #pageResizeHandle {
@@ -191,10 +204,11 @@ form div {
 }
 
 #pageOptions {
-    padding: 12px 12px 8px 12px;
-    border-top: 1px solid #eee;
-    background-color: #fbfbfb;
-    text-align: left;
+  padding: 12px 12px 8px 12px;
+  border-top: 1px solid #eee;
+/*  background-color: #fbfbfb;*/
+  background: #f5f5f5;
+  text-align: left;
 	font-size: 85%;
 	color: #555555;
 }
@@ -255,7 +269,7 @@ form div {
 #pageListItems li.std-page-separator {
 	background-color: #cecece;
 	display: block;
-	height: 2px;
+	height: 1px;
 	padding: 0px;
 	margin: 5px 0px;
 }
@@ -266,6 +280,10 @@ form div {
   width: 90%;
 }
 
+#slots{
+  min-height:220px;
+
+}
 ul.albumPictures {
     list-style-image: none;
     list-style-position: outside;
@@ -308,7 +326,7 @@ li.albumPicture img {
 
 .pageSlot {
     position: relative;
-    padding: 16px 18px 0px;
+    padding: 24px 18px 0px;
 }
 
 .pageSlots {
@@ -319,8 +337,6 @@ li.albumPicture img {
 }
 
 .pageWidget p {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
 }
 
 /* Page slot handle. This is positioned relative to the containing div,
@@ -340,7 +356,8 @@ li.albumPicture img {
     position: absolute;
     right: 0px;
     margin: 0px;
-    background: #ffdd1a;
+/*    background: #ffdd1a;*/
+    background: #fff;
     width: 58px;
     text-align: right;
     line-height: 24px;
@@ -392,12 +409,13 @@ li.albumPicture img {
 #pageInsertItemsBar {
     left: -70px;
     padding-left: 70px;
-	padding-top: 5px;
-	top: 0px;
+    padding-top: 5px;
+    top: 0px;
     position: relative;
     height: 25px;
     z-index: 100;
     width: 100%; /* width */ 
+    background:#DDD;
 }
 
 #pageInsertItemsBar a:hover {
@@ -450,7 +468,8 @@ input.moderate, textarea.moderate {
 
 /* Separator */
 .pageSeparator {
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #555;
+    padding-bottom: 4px;
 }
 
 /* File */
@@ -518,7 +537,19 @@ div.pageList .listItems {
 }
 
 div.pageList .listItem {
-    padding-left: 16px;
+/*    padding-left: 9px;*/
+    padding: 2px 9px;
+}
+
+.pageListHeader{
+  margin-bottom: 4px;
+
+}
+
+
+span.itemText{
+  font-size: 14px;
+
 }
 
 div.pageList .completedItems {
@@ -573,9 +604,17 @@ div.pageList .itemDelete {
 }
 
 #pageTagsWrapper {
-  padding: 6px 12px 6px 12px;
+  /*disabled */
+  display: none !important;
+  background: #aaa;
+  color: #FFF !important;
+  padding: 6px 12px 6px 18px;
 }
 
+#pageEditTags a{
+  color: #fff;
+
+}
 #pageTagsWrapper span {
   padding-right: 12px;
 }
@@ -718,7 +757,7 @@ ul.userJournalList, #userJournals ul {
 }
 
 .sidebarBlock {
-  border-bottom: 2px solid #cecece;
+  border-bottom: 1px solid #cecece;
 }
 
 /* activity log */
@@ -872,13 +911,17 @@ label.check {
 -----------*/
 .addPageLink {
 	display: block;
-	padding: 5px;
+	padding: 5px 5px 5px 14px;
 }
 .addPageLink .newPage { display: block; }
 .addPageLink .newPage:hover { background-color: gray; }
 .addPageLink:hover { background-color: gray; }
 .addPageLink:hover a { color: white; }
 
-#footer { color: #555555; font-size: 80%; }
+#footer { display: none; color: #555555; font-size: 80%; }
 #footer a { color: #555555; }
 #footer a:hover { color: white; background-color: black; }
+
+
+
+.addItem .newItem a {font-size: 10px;}
