@@ -58,6 +58,8 @@ form div {
   margin: 0px auto;
   text-align: left;
   background: #555;
+  background: #3185C5;
+/*  padding-top: 10px;*/
   
 }
 
@@ -74,10 +76,12 @@ form div {
 
 #pageContent {
 /*  margin-top: 12px;*/
+
 }
 
 #innerContent {
   padding: 18px 16px 18px 16px;
+  
 }
 
 /* tabs */
@@ -146,6 +150,12 @@ ul#tabs li a{
   float: left;
   width: 400px;
   background: #fff;
+  box-shadow: 10px 10px 5px #333 !important;
+/*  -moz-border-radius: 5px;*/
+/*  -webkit-border-radius: 5px;*/
+  -moz-box-shadow: 3px 3px 4px #aaa;
+  -webkit-box-shadow: 4px 4px 3px #bbb;
+
 /*    border-right: 1px solid #ccc;*/
 /*    border-bottom: 1px solid #ccc;*/
   
@@ -179,6 +189,7 @@ ul#tabs li a{
 
 .pageHeader {
   padding: 10px 0 10px 18px;
+  background: #EDF3FE;
 /*  border-bottom: 1px solid #eee;*/
 }
 .pageHeader h1 {
@@ -431,6 +442,7 @@ li.albumPicture img {
     z-index: 100;
     width: 100%; /* width */ 
     background:#DDD;
+    background: #eee;
     margin-top: 20px;
 }
 
@@ -943,13 +955,25 @@ label.check {
 -----------*/
 .addPageLink {
 	display: block;
-	padding: 6px 5px 6px 14px;
 	margin-bottom: 4px;
 }
+
+
+.addPage{
+	margin-left: 10px;
+
+
+}
+.addPageLink a{
+  background: url("/images/icons/make_new_page.png") no-repeat;
+  width: 156px;
+  height: 35px;
+  text-indent: -100000px;
+}
 .addPageLink .newPage { display: block; }
-.addPageLink .newPage:hover { background-color: gray; }
-.addPageLink:hover { background-color: gray; }
-.addPageLink:hover a { color: white; }
+.addPageLink a:hover {background-position: bottom;}
+
+
 
 #footer { display: none; color: #555555; font-size: 80%; }
 #footer a { color: #555555; }
