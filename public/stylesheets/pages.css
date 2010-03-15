@@ -359,8 +359,17 @@ li.albumPicture img {
     position: relative;
 }
 
-.pageWidget {
+.pageWidget table{
+  border-collapse: collapse;
+  margin-top: 5px;
 }
+
+.pageWidget table td, th{
+  border: 1px solid #bbb;
+  padding: 3px;
+
+}
+
 
 .pageWidget p {
 }
