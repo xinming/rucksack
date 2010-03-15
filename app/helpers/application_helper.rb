@@ -60,7 +60,7 @@ module ApplicationHelper
       "#{a}='#{attrs[a]}'"
     end.join ' '
     
-    "<img src='/images/icons/#{filename}.gif' alt='#{alt}' #{attr_values}/>"
+    "<img src='/images/icons/#{filename}' alt='#{alt}' #{attr_values}/>"
   end
 
   def file_icon_for(filename, opts={})

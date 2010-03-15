@@ -656,6 +656,7 @@ div.pageList .completedItems {
 
 div.pageList .itemDelete {
   cursor: pointer;
+  margin-bottom: -3px;
 }
 
 /* Page tags */
