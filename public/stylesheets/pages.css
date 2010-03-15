@@ -371,7 +371,8 @@ li.albumPicture img {
 .pageSlotHandle {
     position: relative;
     left: 0pt;
-    width: 0pt; /* seems to trigger positioning on left? */
+    width: 0pt; 
+    /* seems to trigger positioning on left? */
     height: 0pt;
 }
 
@@ -383,28 +384,44 @@ li.albumPicture img {
     right: 0px;
     margin: 0px;
 /*    background: #ffdd1a;*/
-    background: #fff;
+/*    background: #fff;*/
     width: 58px;
-    text-align: right;
+/*    text-align: right;*/
     line-height: 24px;
     z-index:0;
 }
 
 /* Page slot handle list. Inline and semantic */
 .pageSlotHandle ul {
-    display: inline;
+/*    display: inline;*/
     padding: 2px;
 }
 
 .pageSlotHandle li {
-    display: inline;
-    padding-right: 1px;
-    cursor: pointer;
-    font-size: 13px;
+  float: left;
+  display: block;
+  list-style:none;
+  padding-right: 1px;
+  cursor: pointer;
+  font-size: 11px;
+  display: block;
+  text-indent: -10000px;
+  width: 16px;
+  height: 16px;
+
 }
 
 .pageSlotHandle .slot_handle {
-    cursor: move;
+  cursor: move;
+  background: url("/images/icons/move.png") no-repeat;
+}
+
+.pageSlotHandle .slot_edit {
+  background: url("/images/icons/edit.png") no-repeat;
+}
+
+.pageSlotHandle .slot_delete {
+  background: url("/images/icons/delete.png") no-repeat;
 }
 
 /* Page insert bar. Indicates current insertion point */
