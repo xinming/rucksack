@@ -7,3 +7,4 @@ config/deploy.rb
 db/*.sqlite3
 index/**
 .DS_Store
+public/datas/*
