@@ -255,7 +255,7 @@ ul#tabs li a{
     padding: 0px;
 }
 
-#pageListItems li { margin-bottom: 1px; }
+#pageListItems li { padding-bottom: 1px; }
 
 #pageListItems li a {
 	display: block;
@@ -400,6 +400,10 @@ li.albumPicture img {
     z-index:0;
 }
 
+.listItemContent .pageSlotHandle div.inner{
+  right: -2px;
+}
+
 /* Page slot handle list. Inline and semantic */
 .pageSlotHandle ul {
 /*    display: inline;*/
@@ -407,7 +411,7 @@ li.albumPicture img {
 }
 
 .pageSlotHandle li {
-  float: left;
+  float: right;
   display: block;
   list-style:none;
   padding-right: 1px;
@@ -432,6 +436,9 @@ li.albumPicture img {
 .pageSlotHandle .slot_delete {
   background: url("/images/icons/delete.png") no-repeat;
 }
+
+
+
 
 /* Page insert bar. Indicates current insertion point */
 #pageInsert {
@@ -645,7 +652,7 @@ div.pageList .listItems {
 
 div.pageList .listItem {
 /*    padding-left: 9px;*/
-    padding: 2px 9px;
+    padding: 2px 0px;
 }
 
 .pageListHeader{
