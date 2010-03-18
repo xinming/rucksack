@@ -393,7 +393,6 @@ li.albumPicture img {
     right: 0px;
     margin: 0px;
 /*    background: #ffdd1a;*/
-/*    background: #fff;*/
     width: 58px;
 /*    text-align: right;*/
     line-height: 24px;
@@ -461,6 +460,7 @@ li.albumPicture img {
     height: 15px;
     z-index: 100;
     cursor: pointer;
+    -moz-border-radius: 0 8px 8px 0;
 }
 
 /* Page insert items bar. Also contains forms for certain items */
