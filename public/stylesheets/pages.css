@@ -152,7 +152,6 @@ ul#tabs li a{
 #content {
   padding-top: 6px;
   float: left;
-  width: 400px;
   background: url('/images/gradient.png') repeat-x #fff;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
