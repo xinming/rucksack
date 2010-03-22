@@ -13,7 +13,7 @@
       %label{:for => 'loginPassword'}= :password.l
       != password_field_tag 'password', nil, :size => 30, :id => 'loginPassword', :class => 'medium'
     #loginCustom
-      = check_box_tag 'remember_me', '1', @remember_me
+      = check_box_tag 'loginRememberMe', '1', @remember_me
       %label.checkbox{:for => 'loginRememberMe'}= :remember_me.l
       %div
         != link_to :forgot_password_q.l , :controller => 'users', :action => 'forgot_password'
