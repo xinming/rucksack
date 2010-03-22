@@ -399,6 +399,12 @@ li.albumPicture img {
     z-index:0;
 }
 
+#page_header_handle{
+  left:34px;
+  top:8px;
+
+}
+
 .listItemContent .pageSlotHandle div.inner{
   right: -4px;
 }
@@ -455,6 +461,7 @@ li.albumPicture img {
     border-left: #FFD611 solid 10px;
 	  top: 6px;
 	  line-height: 15px;
+    
     position: absolute;
     width: 60px;
     height: 15px;
@@ -880,13 +887,16 @@ ul.userJournalList, #userJournals ul {
 #activityLogs { }
 #activityLogs h2 { padding-bottom: 0px; margin-top: 12px; font-size: 12px; clear:both; border-bottom: 1px solid #ccc; }
 
-.activityUserAvatar { margin: 4px; font-weight: bolder; width: 30px; height: 30px;}
+.activityUserAvatar { margin: 4px 0; font-weight: bolder; }
+.activityUserAvatar div{
+  width: 200px;
+}
 .activityUserEntries li {
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
 }
-.activityEntry { padding-left: 32px; }
+/* .activityEntry { padding-left: 32px; } */
 
 /* user list page */
 #userList

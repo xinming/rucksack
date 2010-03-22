@@ -1,6 +1,8 @@
 !!! Strict
 %html
   %head
+    
+    %meta{ 'name'=>"viewport", 'content'=>"width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"}
     %meta{ 'http-equiv' => 'content-type', :content => 'text/html;charset=UTF-8'}/
     - if @page.can_be_edited_by @logged_user
       %link{ 'rel' => 'alternate', 'type' => 'application/x-wiki', 'title' => :edit.l, 'href' => @page.object_url}/
@@ -25,7 +27,7 @@
     = javascript_tag "var PAGE_ID = #{@page.id}; var PAGE_READONLY = #{!@page.can_be_edited_by(@logged_user)}; var PAGE_WIDTH = #{@page.width};"
     
     %style{:type => 'text/css'}= ".totalPageWidth { width: 925px; }\n#content { width: 690px; }"
-    
+    %link{ 'media'=> "only screen and (max-width: 480px)", 'rel'=>"stylesheet", 'type'=>"text/css", 'href'=>"/stylesheets/iphone.css"}
 
   %body#body
     #wrapper

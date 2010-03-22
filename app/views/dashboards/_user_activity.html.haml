@@ -2,8 +2,8 @@
 %div.activityUser
   %div.activityUserAvatar
     %img{:src => user.gravatar_url(:size => 30)}
-    = user.id == @logged_user.id ? :you.l : user.display_name
-
+    %div
+      = user.id == @logged_user.id ? :you.l : user.display_name
   %div.activityUserEntries
     %ul
     - user_activity[1].each do |log|

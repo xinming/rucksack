@@ -20,27 +20,28 @@ p {
 }
 
 h1 {
-  font-size: 28px;
+  font-size: 18px;
   padding-bottom: 6px;
   margin-bottom: 6px;
-  
-  border-bottom: 2px dashed #eee;
+  font-weight: bold;
+  border-bottom: 1px dotted #ddd;
 }
 
 #dialog {
   margin: 60px auto 0px auto;
   width: 300px;
-  padding: 12px;
-  border-bottom: 3px solid #bbb;
-  border-right: 3px solid #bbb;
-  
+  padding: 20px;
+  -moz-border-radius: 10px 10px !important;
+  -webkit-border-radius: 10px 10px !important;
+  -webkit-box-shadow: 0px 2px 6px #888;
+  -moz-box-shadow: 0px 2px 6px #888;
   background: #fff;
 }
 
 #dialogSubmit {
   padding-top: 6px;
   margin-top: 6px;
-  border-top: 2px dashed #eee;
+  border-top: 1px dotted #ddd;
 }
 
 #statusBar {
@@ -71,12 +72,14 @@ h1 {
 
 input {
   font-size: 13px;
+  padding: 2px;
+  line-height:24px;
 }
 
 label {
   clear:both;
   display:block;
-  
+  height:24px;
   font-size: 14px;
 }
 
