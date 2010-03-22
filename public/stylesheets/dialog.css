@@ -33,9 +33,11 @@ h1 {
   padding: 20px;
   -moz-border-radius: 10px 10px !important;
   -webkit-border-radius: 10px 10px !important;
-  -webkit-box-shadow: 0px 2px 6px #888;
-  -moz-box-shadow: 0px 2px 6px #888;
-  background: #fff;
+  -webkit-box-shadow: 0px 2px 6px #555;
+  -moz-box-shadow: 0px 2px 6px #555;
+
+  background: url("/images/gradient.gif") repeat-x scroll 0 0 #fbfbfb;
+  
 }
 
 #dialogSubmit {
@@ -66,8 +68,8 @@ h1 {
 
 #statusBar.success,
 .flash.success {
-  background: #90DC90;
-  border-color: green;
+  background: #eee;
+  border-color: #ddd;
 }
 
 input {
@@ -80,7 +82,8 @@ label {
   clear:both;
   display:block;
   height:24px;
-  font-size: 14px;
+  line-height:24px;
+  font-size: 13px;
 }
 
 label.checkbox {
