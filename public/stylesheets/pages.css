@@ -4,7 +4,7 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
-h1 { font-size: 22px; font-weight: bold }
+h1 { font-size: 18px; font-weight: bold }
 h2 { font-size: 12px; font-weight: bold; padding-bottom: 0px; text-transform: uppercase;}
 h3 { font-size: 16px; font-weight: bold; padding-bottom: 6px; }
 
@@ -689,7 +689,8 @@ div.pageList .itemDelete {
 /* Page tags */
 
 #tagCrumbsWrapper {
-  padding: 4px;
+  padding: 10px 0;
+  color:#999;
 }
 
 #tagCrumbsWrapper p {
@@ -772,9 +773,13 @@ div.pageList .itemDelete {
 #pageTable td {
   font-size: 16px;
 }
+#myPageHeader td, #sharedPageHeader td{
+  font-size:12px;
+  padding:6px 0;
+}
 
 #pageTable .myPageEntry td {
-  padding-bottom: 8px;
+  font-size:12px;
 }
 
 /* Reminders */
