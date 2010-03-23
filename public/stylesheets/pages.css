@@ -26,6 +26,7 @@ label { display: block; }
 input.checkbox {
   padding: 0px;
   margin: 2px;
+  line-height: 14px;
 }
 
 label.checkbox {
@@ -412,7 +413,10 @@ li.albumPicture img {
 .listItemContent .pageSlotHandle div.inner{
   right: -4px;
 }
+.listItemContent{
+  padding: 2px 0;
 
+}
 /* Page slot handle list. Inline and semantic */
 .pageSlotHandle ul {
 /*    display: inline;*/
@@ -433,6 +437,14 @@ li.albumPicture img {
 
 }
 
+.listItemContent span img{
+  display:block;
+}
+
+.listItemContent span.readCheckbox{
+  float:left;
+
+}
 .pageSlotHandle .slot_handle {
   cursor: move;
   background: url("/images/icons/move.png") no-repeat;
@@ -662,7 +674,6 @@ div.pageList .listItems {
 
 div.pageList .listItem {
 /*    padding-left: 9px;*/
-    padding: 2px 0px;
 }
 
 .pageListHeader{
@@ -670,10 +681,9 @@ div.pageList .listItem {
 
 }
 
-
 span.itemText{
-  font-size: 14px;
-
+  font-size: 16px;
+  line-height:16px;
 }
 
 div.pageList .completedItems {
@@ -682,6 +692,7 @@ div.pageList .completedItems {
 
 div.pageList .itemDelete {
   cursor: pointer;
+  float:left;
   margin-bottom: -3px;
 }
 
@@ -1054,12 +1065,15 @@ label.check {
 }
 .addPageLink a{
   text-decoration: none;
+  text-transform: uppercase;
   color: #444;
   padding: 4px;
+  padding-left:20px;
   cursor: pointer;
+  background: url('/images/icons/add.png') no-repeat left center;
 }
 
-.addPageLink a:hover {position:relative; top: 1px;}
+.addPageLink a:hover {background-color:#444; color:#fff;}
 
 
 #footer { display: none; color: #555555; font-size: 80%; }
