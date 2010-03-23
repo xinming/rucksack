@@ -987,8 +987,7 @@ var Page = {
       });
       
       $('#statusBar').click(function(evt) {
-        $(this).hide('slow');
-        
+        $(this).hide();
         return false;
       });
       
