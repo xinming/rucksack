@@ -8,11 +8,11 @@ h1 { font-size: 18px; font-weight: bold }
 h2 { font-size: 12px; font-weight: bold; padding-bottom: 0px; text-transform: uppercase;}
 h3 { font-size: 16px; font-weight: bold; padding-bottom: 6px; }
 
-body { 
+body {
   margin: 0px; 
   padding: 0px; 
   color: #000; 
-  background:url('/images/background.png');
+  background:#f4f4f4;
 }
 
 label { display: block; }
@@ -682,7 +682,7 @@ div.pageList .listItem {
 }
 
 span.itemText{
-  font-size: 16px;
+  font-size: 14px;
   line-height:16px;
 }
 
