@@ -51,6 +51,17 @@ ul{
   background:#444;
 }
 
+.pageNoteContent ul{
+  margin: 0px;
+  border: none;
+}
+
+.pageNoteContent ul li{
+  border: none;
+  padding: 0px;
+  background: none;
+  list-style-type: disc;
+}
 
 .pageNoteContent p{
   font: 14px Helvetica;
@@ -64,4 +75,8 @@ table{
 table td{
   border: 1px solid #bbb;
   padding: 4px;
+}
+
+pre{
+  overflow: auto;
 }
