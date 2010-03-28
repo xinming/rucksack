@@ -47,9 +47,12 @@ class PagesController < ApplicationController
     end
     
     @content_for_sidebar = 'page_sidebar'
-
     respond_to do |format|
-      format.html # index.html.erb
+      format.html do
+        if request.user_agent.include?("iPhone")
+          render :layout => "iphone_index", :template => "pages/iphone_index"
+        end
+      end
       format.js
       format.xml  { render :xml => @pages.to_xml(:in_list => true) }
     end
@@ -71,7 +74,11 @@ class PagesController < ApplicationController
     session['page_id'] = @page.id
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html do
+        if request.user_agent.include?("iPhone")
+          render :layout => "iphone"
+        end
+      end
       format.xml  { render :xml => @page.to_xml }
       format.rss { 
         conds = {'page_id' => @page.id}

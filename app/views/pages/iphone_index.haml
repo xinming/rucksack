@@ -1,0 +1,15 @@
+%h2 My Pages
+%div.openItems
+  %ul.rounded
+    - for page in @pages
+      %li.forward
+        %a{:target=> "_webapp", :class=> "itemText fade", :href => page_path(page)}= h page.title
+        
+        
+-if @shared_pages.size > 0
+  %h2 Shared Pages
+  %div.openItems
+    %ul.rounded
+      - for page in @shared_pages
+        %li.forward
+          %a{:target=> "_webapp", :class=> "itemText fade", :href => page_path(page)}= h page.title

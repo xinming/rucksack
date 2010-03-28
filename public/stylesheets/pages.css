@@ -1,5 +1,6 @@
 @import 'reset.css';
 
+
 a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
@@ -1084,3 +1085,7 @@ label.check {
 
 .addItem .newItem a {font-size: 10px;}
 a.cancel{font-size: 10px;}
+
+
+.totalPageWidth { width: 925px; }
+#content { width: 690px; }

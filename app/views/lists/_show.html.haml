@@ -7,7 +7,7 @@
       %h2= object.name
   
   .openItems
-    %ul.listItems{:id => "sortable_list_#{object.id}"}
+    %ul.rounded.listItems{:id => "sortable_list_#{object.id}"}
       = render :partial => 'list_items/show', :collection => object.open_items
   
   - if object.can_be_edited_by(@logged_user)
