@@ -1,10 +1,11 @@
 CACHE MANIFEST
 
-stylesheets/jqtouch.css
-stylesheets/iphone.css
-javascript/jqtouch.js
-javascript/jqtouch.transitions.js
-javascript/jquery.1.3.2.min.js
+/stylesheets/jqtouch.css
+/stylesheets/iphone.css
+/javascript/jqtouch.js
+/javascript/jqtouch.transitions.js
+/javascript/jquery.1.3.2.min.js
+/images/icons/rucksack.png
 /images/startup_rucksack.png
 /themes/jqt/theme.css
 /themes/jqt/img/back_button.png
