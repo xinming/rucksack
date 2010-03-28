@@ -1,4 +1,4 @@
-#pageWidgetForms,.completedItems, #pageInsertItems, #pageTagsWrapper, .addItem, #pageOptions, input.checkbox{display:none;}
+#pageWidgetForms, #pageInsertItems, #pageTagsWrapper, .addItem, #pageOptions, input.checkbox{display:none;}
 
 
 .pageUploadedFile{display: none}
@@ -91,4 +91,13 @@ border:none;
 color:#eee;
 font:18px;
 font-weight:bold;
+}
+
+ul.completed li *{
+  text-decoration:line-through;
+}
+
+ul.completed li img{
+  display:none;
+
 }
