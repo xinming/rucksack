@@ -16,7 +16,7 @@
     
     = auto_discovery_link_tag(:rss, {:controller => 'pages', :action => 'show', :id => @page.id, :format => 'rss'})
     
-    = javascript_include_tag 'jquery.js' 
+    = javascript_include_tag 'jquery.1.3.2.min.js' 
     = javascript_include_tag 'jquery-ui.js'
     = javascript_include_tag 'jrails.js'
     = javascript_include_tag 'application.js'
@@ -26,8 +26,6 @@
     
     = javascript_tag "var PAGE_ID = #{@page.id}; var PAGE_READONLY = #{!@page.can_be_edited_by(@logged_user)}; var PAGE_WIDTH = #{@page.width};"
     
-    %style{:type => 'text/css'}= ".totalPageWidth { width: 925px; }\n#content { width: 690px; }"
-    %link{ 'media'=> "only screen and (max-width: 480px)", 'rel'=>"stylesheet", 'type'=>"text/css", 'href'=>"/stylesheets/iphone.css"}
 
   %body#body
     #wrapper

@@ -82,3 +82,13 @@ table td{
 pre{
   overflow: auto;
 }
+
+input[type=submit]{
+background:none;
+width:100%;
+margin:0px;
+border:none;
+color:#eee;
+font:18px;
+font-weight:bold;
+}

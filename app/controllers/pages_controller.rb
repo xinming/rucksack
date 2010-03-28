@@ -50,7 +50,7 @@ class PagesController < ApplicationController
     respond_to do |format|
       format.html do
         if request.user_agent.include?("iPhone")
-          render :layout => "iphone_index", :template => "pages/iphone_index"
+          render :layout => "iphone_dialog", :template => "pages/iphone_index"
         end
       end
       format.js

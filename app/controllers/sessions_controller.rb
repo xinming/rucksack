@@ -34,7 +34,11 @@ class SessionsController < ApplicationController
   def new
     @login_token = params[:token]
     @use_openid = params[:use_openid].to_i == 1
-    render :action => (@login_token.nil? ? 'new' : 'new_token')
+    if request.user_agent.include?("iPhone")
+      render :layout => "iphone_dialog", :template => "sessions/iphone_new"
+    else
+      render :action => (@login_token.nil? ? 'new' : 'new_token')
+    end
   end
   
   def show
@@ -71,7 +75,11 @@ class SessionsController < ApplicationController
       @remember_me = params[:remember_me]
       @login_token = params[:token]
       @login_email = params[:token_email]
-      render :action => (@login_token.nil? ? 'new' : 'new_token')
+      if request.user_agent.include?("iPhone")
+        render :layout => "iphone_dialog", :template => "sessions/iphone_new"
+      else
+        render :action => (@login_token.nil? ? 'new' : 'new_token')
+      end
     end
   end
 
