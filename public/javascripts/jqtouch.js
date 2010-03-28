@@ -160,7 +160,7 @@
                 {
                     $body.click(function(e){
                         var $el = $(e.target);
-                        if ($el.attr('target') == '_blank' || $el.attr('rel') == 'external' || $el.is('input[type="checkbox"]'))
+                        if ($el.attr('target') == '_blank' || $el.attr('rel') == 'external' || $el.is('input[type="checkbox"]') || $el.is('input[type="submit"]'))
                         {
                             return true;
                         } else {
