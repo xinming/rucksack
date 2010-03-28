@@ -59,7 +59,8 @@ ul{
 .pageNoteContent ul li{
   border: none;
   padding: 0px;
-  font: 14px Helvetica normal;
+  font: 14px Helvetica;
+  color:#eee;
   background: none;
   list-style-type: disc;
 }
