@@ -89,7 +89,7 @@ width:100%;
 margin:0px;
 border:none;
 color:#eee;
-font:18px;
+font-size:16px;
 font-weight:bold;
 }
 
@@ -99,5 +99,11 @@ ul.completed li *{
 
 ul.completed li img{
   display:none;
+
+}
+
+
+#login_page{
+margin-top: 120px;
 
 }
