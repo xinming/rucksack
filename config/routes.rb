@@ -24,6 +24,7 @@
 #++
 
 ActionController::Routing::Routes.draw do |map|
+  map.cache '/cache.manifest', :controller => 'cache', :action => 'cache'
   map.resource :account, :as => 'settings'
 
   map.resource :dashboard
@@ -31,7 +32,6 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resource :status
   map.resources :journals
-
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
