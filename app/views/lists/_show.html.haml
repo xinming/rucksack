@@ -5,10 +5,10 @@
   - if object.can_be_edited_by(@logged_user)
     .pageListForm{:id => "list_header_#{object.id}_form", :style => 'display:none'}
       %h2= object.name
-  - if object.open_items.size > 0 
-    .openItems
-      %ul.rounded.listItems{:id => "sortable_list_#{object.id}"}
-        = render :partial => 'list_items/show', :collection => object.open_items
+
+  .openItems
+    %ul.rounded.listItems{:id => "sortable_list_#{object.id}"}
+      = render :partial => 'list_items/show', :collection => object.open_items
   
   - if object.can_be_edited_by(@logged_user)
     .addItem
